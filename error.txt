@@ -1,0 +1,52 @@
+MongoDB connection error: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/connection.js:846:32)
+    at /Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/index.js:351:10
+    at /Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/index.js:1149:10)
+    at Mongoose.connect (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/index.js:350:20)
+    at Object.<anonymous> (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/app.js:46:10)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/bin/www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30) {
+  reason: TopologyDescription {
+    type: 'Single',
+    setName: null,
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: null,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: null
+  }
+}
+(node:24029) UnhandledPromiseRejectionWarning: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/connection.js:846:32)
+    at /Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/index.js:351:10
+    at /Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/helpers/promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/index.js:1149:10)
+    at Mongoose.connect (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/node_modules/mongoose/lib/index.js:350:20)
+    at Object.<anonymous> (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/app.js:46:10)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/douglasmckinley/Documents/express-locallibrary-tutorial/bin/www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+(node:24029) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:24029) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
